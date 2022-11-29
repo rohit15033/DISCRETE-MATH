@@ -11,12 +11,10 @@ G = nx.Graph()
 
 edges = []
 edgesInput = int(input("How many edges do you want? >>> "))
-Indicator = 0
 
 # GET INPUT FROM USER
 while len(edges) < edgesInput:
-    Indicator += 1
-    print ("\nFor edge ", Indicator)
+    print ("\nFor edge ", len(edges) + 1)
     n = input("Enter 1st Vertex and 2nd Vertex (Ex. 'a,b') >>> ").split(",")
     
     duplicated = False
@@ -35,7 +33,7 @@ while len(edges) < edgesInput:
             d = 0
     
     if duplicated:
-        print("Input Duplicated! Please Try Again")
+        print("\nInput Duplicated! Please Try Again")
     else:
         edges.append(n)
 
