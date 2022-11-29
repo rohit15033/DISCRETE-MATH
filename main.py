@@ -32,7 +32,7 @@ while len(edges) < edgesInput:
             d = 0
     
     if duplicated:
-        print("Input Duplicated! Please Try Again")
+        print("\nInput Duplicated! Please Try Again")
     else:
         edges.append(n)
 
