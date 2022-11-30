@@ -14,6 +14,7 @@ edgesInput = int(input("How many edges do you want? >>> "))
 
 # GET INPUT FROM USER
 while len(edges) < edgesInput:
+    print ("\nFor Edge: ", len(edges)+1)
     n = input("Enter 1st Vertex and 2nd Vertex (Ex. 'a,b') >>> ").split(",")
     
     duplicated = False
